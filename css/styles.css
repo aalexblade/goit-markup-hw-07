@@ -196,7 +196,9 @@
     
   
   .header__contact-link:hover,
-  .header__contact-link:focus {
+  .header__contact-link:focus,
+  .footer__contact-link:hover,
+  .footer__contact-link:focus {
      color:var(--accent-color);
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -269,14 +271,7 @@
     line-height: 1.36;
   }
   
-  .pointer{
-    padding-top: 6px;
-    padding-right: 22px;
-    padding-bottom: 6px;
-    padding-left: 22px; 
-    
-  }
-  
+   
   .hero__button {
     cursor: pointer;
     color: #fff;
@@ -802,19 +797,19 @@
   
   /* услуги */
   
-  .servisces-title{
+  .servisces__title{
   display: none;
       
   }
   
-  .servisces-button{
+  .servisces__button{
   justify-content: center;
   display: flex;
   margin-bottom: 50px;
        
    
   }
-  .title-button{
+  .servisces__text-button{
    margin-right: 8px;
     
   }
@@ -828,10 +823,10 @@
     gap: 30px;
     }
 
-  /  
+   
   
-   .services .pointer:hover,
-   .services .pointer:focus {
+   .services .servisces__pointer:hover,
+   .services .servisces__pointer:focus {
     color: var(--primery-button-colot);
     background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
@@ -842,10 +837,23 @@
   }
 
   /* .services */
-  .pointer{
+
+  /* .servisces__pointer{
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px; 
+    
+  } */
+
+  .servisces__pointer{
     cursor: pointer;
     color: var(--primery-text-colot);
     background-color:#F5F4FA;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px; 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
